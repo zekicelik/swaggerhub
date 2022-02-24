@@ -7,6 +7,7 @@ tags:
     description: This part create block of paths.
   - name: article
     description: Articles for H Plus Sport App
+  - name: New Tag 3
 paths:
   /product/{productId}:
     get:
@@ -35,10 +36,8 @@ paths:
             application/xml:
               schema:
                 $ref: "#/components/schemas/Product"
-        400:
-          $ref: 'https://api.swaggerhub.com/domains/DemoOrganization_1/common/1.0.0#/components/responses/GeneralError'
         500:
-          $ref: "#/components/responses/500APIError"
+          $ref: 'https://api.swaggerhub.com/domains/DemoOrganization_1/common/1.0.0#/components/responses/GeneralError'
   /product:
     post:
       description: Add new product.
@@ -164,3 +163,7 @@ components:
               massage:
                 type: string
                 example: This is generic api error for 500
+servers:
+  # Added by API Auto Mocking Plugin
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/DemoOrganization_1/h-plus_api/1.0.0
