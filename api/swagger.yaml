@@ -127,6 +127,9 @@ components:
         image:
           type: string
           example: https:www.hyper-link-to-image.com
+        image-alt:
+          type: string
+          example: image text
     Article:
       type: object
       properties:
